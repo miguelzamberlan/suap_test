@@ -1,0 +1,11 @@
+# Core Django
+Django==4.1.5
+django-ckeditor==6.2.0
+django-extensions==3.2.1
+# Reversion
+django-reversion==5.0.4
+django-reversion-compare==0.15.0
+
+# Storages
+boto3==1.26.32
+django-storages==1.13.1
