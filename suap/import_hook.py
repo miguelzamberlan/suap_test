@@ -18,7 +18,7 @@ class MyImportHook(MetaPathFinder):
                 # Substituindo Aluno por AlunoPlus dentro do módulo
                 from alunoplus.models import AlunoPlus
                 module.Aluno = AlunoPlus
-                # Se necessário, você pode fazer outras alterações dentro do módulo aqui
+
         return AlunoLoader()
 
     @staticmethod
