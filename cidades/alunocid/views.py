@@ -17,9 +17,11 @@ def homeDecorator(func):
 
 
 """
+Outra opção
 Este método substitui o método original da classe Aluno
 """
-def homeNew(request):
+# Alterar o arquivo urls.py para apontar para a nova view que também terá o nome de home
+def home(request):
     aluno = Aluno.objects.get(pk=3)
     print(aluno.nomecompleto_email())  # Usando método da classe original
     print(aluno.nomecompleto())  # Reescrita do método
@@ -30,6 +32,3 @@ def homeNew(request):
 # OBSEVAÇÃO:
 # No banco de dados mantem a tabela original e cria uma nova tabela com os adicionais
 # Como substituir um método da view sem alterar o código fonte original ?
-
-# Alterar o arquivo urls.py para apontar para a nova view
-home = homeNew
