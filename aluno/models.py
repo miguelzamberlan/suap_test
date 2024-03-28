@@ -10,5 +10,11 @@ class Aluno(models.Model):
     criado_em = models.DateTimeField(auto_now_add=True)
     atualizado_em = models.DateTimeField(auto_now=True)
 
+    def nomecompleto(self):
+        return f"{self.nome} ({self.matricula})"
+
+    def nomecompleto_email(self):
+        return f"{self.nome} ({self.matricula}) - {self.email}"
+
     def __str__(self):
         return self.nome

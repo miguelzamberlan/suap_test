@@ -38,9 +38,7 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "aluno",
-    "alunoplus",
-    "professor",
-    "implements",
+    "cidades.alunocid",  # Incluído novo App no projeto
 ]
 
 MIDDLEWARE = [

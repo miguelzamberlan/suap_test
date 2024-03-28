@@ -1,6 +1,6 @@
 from django.apps import AppConfig
 
 
-class AlunoplusConfig(AppConfig):
+class AlunocidConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'alunoplus'
+    name = 'cidades.alunocid'
